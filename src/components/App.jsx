@@ -1,30 +1,23 @@
+
 import { GlobalStyle } from './GlobalStyle';
-import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistics/Statistics';
-import { FriendList } from './FriendList/FriendList';
-import { TransactionHistory } from './TransactionHistory/TransactionHistory';
-import user from 'data/user.json';
-import data from 'data/data.json';
-import friends from 'data/friends.json';
-import transactions from 'data/transactions.json';
+
 
 export const App = () => {
   return (
-    <>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+    <><div className="FeedBack">
+    <h1>Please leave feedback</h1>
 
-      <Statistics title="Upload stats" stats={data} />
+    <button type="button" onClick={(e)=>{console.log(e)}}>Good</button>
+      <button type="button" onClick={(e) => { console.log(e) }}>Neutral</button>
+      <button type="button" onClick={(e) => { console.log(e) }}>Bad</button>
 
-      <FriendList friends={friends} />
-
-      <TransactionHistory items={transactions} />
-
+    <h1>Statistics</h1>
+    <p>Good</p>
+    <p>Neutral</p>
+    <p>Bad</p>
+    <p>Total:</p>
+    <p>Positive feedback:</p>
+  </div>
       <GlobalStyle />
     </>
   );
