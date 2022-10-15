@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Romaleso261981/goit-react-hw-02-feedback/static/css/main.4584f192.css",
-    "main.js": "/Romaleso261981/goit-react-hw-02-feedback/static/js/main.d52e334e.js",
+    "main.js": "/Romaleso261981/goit-react-hw-02-feedback/static/js/main.725d6bbc.js",
     "index.html": "/Romaleso261981/goit-react-hw-02-feedback/index.html",
     "main.4584f192.css.map": "/Romaleso261981/goit-react-hw-02-feedback/static/css/main.4584f192.css.map",
-    "main.d52e334e.js.map": "/Romaleso261981/goit-react-hw-02-feedback/static/js/main.d52e334e.js.map"
+    "main.725d6bbc.js.map": "/Romaleso261981/goit-react-hw-02-feedback/static/js/main.725d6bbc.js.map"
   },
   "entrypoints": [
     "static/css/main.4584f192.css",
-    "static/js/main.d52e334e.js"
+    "static/js/main.725d6bbc.js"
   ]
 }
