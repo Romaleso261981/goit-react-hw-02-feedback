@@ -1,11 +1,12 @@
 import { Component } from 'react';
-import Section from './Section/Section';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Statistics from './Statistics/Statistics';
 import Notification from './Notification/Notification';
+import { WrapSection, SectionInfo, SectionWrap } from './GlobalStyle'
+import Section from './Section/Section';
 
 export class App extends Component {
-  state = {
+  state = { 
     good: 0,
     neutral: 0,
     bad: 0,
@@ -27,16 +28,19 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     const options = Object.keys(this.state);
     return (
-      <>
-          <Section title="Please leave feedback">
+      <WrapSection>
+        <SectionWrap>
+        <Section title="Please leave feedback">
             <FeedbackOptions
               options={options}
               onBtnClick={this.counterOfFeedback}
             />
           </Section>
-          <Section title={'Statistics'}>
+          </SectionWrap>
+        <SectionInfo>
+        <Section title={'Statistics'}>
             {this.counterTotalFeedback() > 0 ? (
-              <Statistics
+            <Statistics
                 good={good}
                 neutral={neutral}
                 bad={bad}
@@ -49,7 +53,8 @@ export class App extends Component {
               <Notification message="There is no feedback" />
             )}
           </Section>
-      </>
+          </SectionInfo>
+      </WrapSection>
     );
   }
 }
