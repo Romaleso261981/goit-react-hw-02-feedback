@@ -4,7 +4,9 @@ export const FeedbackList = styled.ul`
   display: flex;
   justify-content: center;
   list-style: none;
+  padding: 0px;
 `;
+
 
 export const FeedbackItem = styled.li`
   &:not(:last-child) {
