@@ -6,5 +6,5 @@ export const SectionStyled = styled.section`
 `;
 
 export const Title = styled.h2`
- color: green
+ color: rebeccapurple
 `;
